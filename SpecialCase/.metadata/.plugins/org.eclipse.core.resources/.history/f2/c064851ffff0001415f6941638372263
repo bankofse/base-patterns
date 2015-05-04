@@ -1,0 +1,8 @@
+
+public class NormalCase implements SpecialCaseInterface{
+	private String name;
+	
+	public NormalCase(String name;){
+		this.name = name;
+	}
+}

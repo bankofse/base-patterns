@@ -1,0 +1,11 @@
+
+public class DatePair {
+	private int month;
+	private int day;
+	
+	public DatePair(int month, int day){
+		this.month = month;
+		this.day = day;
+	}
+
+}

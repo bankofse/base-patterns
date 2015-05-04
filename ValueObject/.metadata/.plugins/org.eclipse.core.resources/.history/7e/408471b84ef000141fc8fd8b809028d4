@@ -1,0 +1,16 @@
+public class DatePair {
+	public int month;
+	public int day;
+	
+	public DatePair(int month, int day){
+		this.month = month;
+		this.day = day;
+	}
+	
+	public boolean equals(DatePair other){
+		if((this.month == other.month) & (this.day == other.day))
+			return true;
+		return false;
+	}
+
+}

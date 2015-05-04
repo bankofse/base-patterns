@@ -1,0 +1,27 @@
+import java.util.Calendar;
+
+public class ValueObject {
+	private DatePair start;
+	private DatePair end;
+	
+	public ValueObject(int startMonth, int startDay, int endMonth, int endDay){
+		this.start.month = startMonth;
+		this.start.day = startDay;
+		this.end.month = endMonth;
+		this.end.day = endDay;
+	}
+	
+	public DatePair getStart(){
+		return start;
+	}
+	
+	public DatePair getEnd(){
+		return end;
+	}
+	
+	public boolean equals(ValueObject a){
+		if((this.start == a.start) & (this.end == a.end))
+			return true;
+		return false;
+	}
+}

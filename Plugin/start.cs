@@ -14,7 +14,7 @@ namespace Plugin
         {
             Plugin = new IdGenerator();
 
-            Console.WriteLine();
+            Console.WriteLine(IdGenerator.getId());
         }
     }
 }

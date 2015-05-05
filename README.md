@@ -78,3 +78,16 @@ The Separate Interface pattern is especially useful in situations where you have
 specific functionality wrapped between objects. Their dependancies are ensured
 by the interface, which can be used from inside various packages around the
 system.
+
+## Record Set
+
+The Record Set pattern allows you to manipulate the results of SQL queries 
+within an in-memory data structure.
+
+## Service Stub
+
+The service stub pattern allows you to substitute an enterprise service
+that your application uses with a simple stubbed version for testing
+purposes. For instance, if your bank uses a currency conversion api, and you
+don't want to test the api itself while testing your application, you may
+add a stub that returns canned currency conversion results.

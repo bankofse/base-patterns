@@ -2,6 +2,11 @@
 
 ## Gateway
 
+The Gateway pattern allows programs to access data or resources which are not
+necessarily object-oriented code or in-memory data structures. These resources
+are presented as APIs. For instance, a row data gateway provides an API over
+data returned from SQL queries.
+
 ## Mapper
 
 The Mapper pattern is important to engineering enterprise systems, especially
@@ -33,7 +38,19 @@ each UI compnent in the presentation layer has this ability.
 
 ## Separate Interface
 
+The separate interface pattern allows you to isolate packages that do not 
+normally depend on each other. In some edge cases, packages *will* rely on 
+each other. For instance, the domain package relies on the data mapper package
+to store its data. The interface implementation lies in the other package, 
+whereas the interface itself lies in the package using the other.
+
 ## Registry
+
+If you have many objects spread thorughout your application it may become
+difficult to discover or recover these objects. A registry provides a central
+location in which to store object references or ids. Components of the
+application wishing to use objects of a certain type may query the registry to
+find them.
 
 ## Value Object
 
@@ -56,3 +73,8 @@ normal case, and then the null case which handles the nullity within itself, but
 any special case can have its wn subclass to deal with that particular case.
 
 ## Plugin
+
+The Separate Interface pattern is especially useful in situations where you have
+specific functionality wrapped between objects. Their dependancies are ensured
+by the interface, which can be used from inside various packages around the
+system.

@@ -1,0 +1,2 @@
+The Separate Interface pattern is especially useful in situations where you have specific functionality wrapped between objects. 
+Their dependancies are ensured by the interface, which can be used from inside various packages around the system. 
